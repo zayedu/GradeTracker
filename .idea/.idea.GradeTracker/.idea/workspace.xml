@@ -8,7 +8,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87a2c868-6069-45c2-974a-ed9c3ec07fc4" name="Changes" comment="" />
+    <list default="true" id="87a2c868-6069-45c2-974a-ed9c3ec07fc4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GradeTracker/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GradeTracker/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GradeTracker/Views/Builder/Course.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker/Views/Builder/Course.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GradeTracker/bin/Debug/net8.0/GradeTracker.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker/bin/Debug/net8.0/GradeTracker.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GradeTracker/bin/Debug/net8.0/GradeTracker.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker/bin/Debug/net8.0/GradeTracker.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GradeTracker/obj/Debug/net8.0/GradeTracker.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker/obj/Debug/net8.0/GradeTracker.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GradeTracker/obj/Debug/net8.0/GradeTracker.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker/obj/Debug/net8.0/GradeTracker.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GradeTracker/obj/Debug/net8.0/GradeTracker.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker/obj/Debug/net8.0/GradeTracker.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GradeTracker/obj/Debug/net8.0/GradeTracker.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker/obj/Debug/net8.0/GradeTracker.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GradeTracker/obj/Debug/net8.0/GradeTracker.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker/obj/Debug/net8.0/GradeTracker.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GradeTracker/obj/Debug/net8.0/ref/GradeTracker.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker/obj/Debug/net8.0/ref/GradeTracker.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GradeTracker/obj/Debug/net8.0/refint/GradeTracker.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker/obj/Debug/net8.0/refint/GradeTracker.dll" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +28,9 @@
   </component>
   <component name="DpaMonitoringSettings">
     <option name="autoShow" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/bf9021a960b74107a7e141aa06bc9d8a0a53c929178c2fb95b1597be8af8dc/ExceptionDispatchInfo.cs" root0="FORCE_HIGHLIGHTING" />
@@ -33,6 +48,7 @@
   "keyToString": {
     ".NET Launch Settings Profile.GradeTracker: http.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",

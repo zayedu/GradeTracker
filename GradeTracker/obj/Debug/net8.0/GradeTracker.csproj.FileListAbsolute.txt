@@ -28,3 +28,4 @@
 /Users/zayedumer/Documents/Personal-Projects/GradeTracker/GradeTracker/obj/Debug/net8.0/GradeTracker.pdb
 /Users/zayedumer/Documents/Personal-Projects/GradeTracker/GradeTracker/obj/Debug/net8.0/GradeTracker.genruntimeconfig.cache
 /Users/zayedumer/Documents/Personal-Projects/GradeTracker/GradeTracker/obj/Debug/net8.0/ref/GradeTracker.dll
+/Users/zayedumer/Documents/Personal-Projects/GradeTracker/GradeTracker/obj/Debug/net8.0/GradeTracker.sourcelink.json

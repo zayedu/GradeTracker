@@ -117,55 +117,55 @@
 </html>
 
 <script>
+    function calculateTotalWeightAchieved() {
+        let totalWeightAchieved = 0;
+
+        // Sum assignment weights
+        document.querySelectorAll('[id^="assignmentWeightAchieved_"]').forEach(element => {
+            totalWeightAchieved += parseFloat(element.innerText) || 0;
+        });
+
+        // Sum midterm weights
+        document.querySelectorAll('[id^="midtermWeightAchieved_"]').forEach(element => {
+            totalWeightAchieved += parseFloat(element.innerText) || 0;
+        });
+
+        // Add final exam weight
+        totalWeightAchieved += parseFloat(document.getElementById('finalWeightAchieved').innerText) || 0;
+
+        // Update the final mark sum
+        document.getElementById('finalMarkSum').innerText = totalWeightAchieved.toFixed(2);
+
+        // Calculate and update the final exam mark needed to 12
+        calculateFinalExamMarkTo12(totalWeightAchieved);
+    }
+
+    function calculateFinalExamMarkTo12(totalWeightAchieved) {
+        var finalExamWeight = @Model.Final.Weight;
+        var finalExamMarkTo12 = (90 - totalWeightAchieved) / finalExamWeight;
+        document.getElementById('finalExamMarkTo12').innerText = 100*(finalExamMarkTo12.toFixed(2));
+    }
+
     function updateFinalWeight() {
         var mark = parseFloat(document.getElementById('finalMark').value) || 0;
         var weight = @Model.Final.Weight;
         var weightAchieved = (mark / 100.0) * weight;
         document.getElementById('finalWeightAchieved').innerText = weightAchieved.toFixed(2);
-        updateFinalMarks();
+        calculateTotalWeightAchieved();
     }
 
     function updateMidtermWeight(midtermName, weight) {
         var mark = parseFloat(document.getElementById('midtermMark_' + midtermName).value) || 0;
         var weightAchieved = (mark / 100.0) * weight;
         document.getElementById('midtermWeightAchieved_' + midtermName).innerText = weightAchieved.toFixed(2);
-        updateFinalMarks();
+        calculateTotalWeightAchieved();
     }
 
     function updateAssignmentWeight(assignmentName, weight) {
         var mark = parseFloat(document.getElementById('assignmentMark_' + assignmentName).value) || 0;
         var weightAchieved = (mark / 100.0) * weight;
         document.getElementById('assignmentWeightAchieved_' + assignmentName).innerText = weightAchieved.toFixed(2);
-        updateFinalMarks();
-    }
-
-</script>
-<script>
-    function updateFinalMarks() {
-        var finalMarkSum = 0;
-
-        // Sum the achieved weights for assignments
-        var assignments = @Html.Raw(Json.Serialize(Model.Assignments.Select(a => new { a.Name }).ToList()));
-        assignments.forEach(function(assignment) {
-            finalMarkSum += parseFloat(document.getElementById('assignmentWeightAchieved_' + assignment.Name).innerText) || 0;
-        });
-
-        // Sum the achieved weights for midterms
-        var midterms = @Html.Raw(Json.Serialize(Model.Midterms.Select(m => new { m.Name }).ToList()));
-        midterms.forEach(function(midterm) {
-            finalMarkSum += parseFloat(document.getElementById('midtermWeightAchieved_' + midterm.Name).innerText) || 0;
-        });
-
-        // Add the achieved weight for the final exam
-        finalMarkSum += parseFloat(document.getElementById('finalWeightAchieved').innerText) || 0;
-
-        // Update the final mark sum in the table
-        document.getElementById('finalMarkSum').innerText = finalMarkSum.toFixed(2);
-
-        // Calculate and update the final exam mark to 12
-        var finalExamWeight = @Model.Final.Weight;
-        var finalExamMarkTo12 = (90 - finalMarkSum) / finalExamWeight;
-        document.getElementById('finalExamMarkTo12').innerText = finalExamMarkTo12.toFixed(2);
+        calculateTotalWeightAchieved();
     }
 </script>
 
