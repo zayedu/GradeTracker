@@ -6,7 +6,7 @@ public class Models
 }
 public class Grade
 {
-    public int Mark { get; set; }
+    public double Mark { get; set; }
     public double Weight { get; set; }
 }
 
@@ -36,4 +36,10 @@ public class Course
     public List<Midterm> Midterms { get; set; }
     public Final Final { get; set; }
     public List<Assignment> Assignments { get; set; }
+}
+public class GradeInputModel
+{
+    public string CourseName { get; set; }
+    public string GradeName { get; set; }
+    public double GradeValue { get; set; }
 }

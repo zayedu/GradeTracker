@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 @{
-    int finalMark = 0;
-    int finalMarkTo12 = 0;
+int finalMark = 0;
+int finalMarkTo12 = 0;
 }
 <body>
 <div class="container mt-5">
@@ -113,6 +113,7 @@
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<button class="btn btn-primary" onclick="saveAllGrades()">Save</button>
 </body>
 </html>
 
@@ -169,3 +170,61 @@
     }
 </script>
 
+<script>
+    function saveAllGrades() {
+        const courseName = '@Model.Name';
+        const grades = [];
+
+        // Collect assignment grades
+        document.querySelectorAll('[id^="assignmentMark_"]').forEach(element => {
+            const gradeName = element.id.replace('assignmentMark_', '');
+            const gradeValue = parseFloat(element.value) || 0;
+            grades.push({ gradeName, gradeValue });
+        });
+
+        // Collect midterm grades
+        document.querySelectorAll('[id^="midtermMark_"]').forEach(element => {
+            const gradeName = element.id.replace('midtermMark_', '');
+            const gradeValue = parseFloat(element.value) || 0;
+            grades.push({ gradeName, gradeValue });
+        });
+
+        // Collect final exam grade
+        const finalMarkElement = document.getElementById('finalMark');
+        if (finalMarkElement) {
+            const gradeName = 'Final Exam';
+            const gradeValue = parseFloat(finalMarkElement.value) || 0;
+            grades.push({ gradeName, gradeValue });
+        }
+
+        // Send POST request via fetch
+        const promises = grades.map(grade => {
+            return fetch('/Builder/SaveGrade', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    courseName: courseName,
+                    gradeName: grade.gradeName,
+                    gradeValue: grade.gradeValue
+                })
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (!data.success) {
+                        throw new Error(`Failed to save grade: ${grade.gradeName}`);
+                    }
+                });
+        });
+
+        Promise.all(promises)
+            .then(() => {
+                const buildUrl = '@Url.Action("Build", "Builder")' + `?courseName=${courseName}`;
+                window.location.href = buildUrl;
+            })
+            .catch(error => {
+                alert('Error saving grades: ' + error.message);
+            });
+    }
+</script>

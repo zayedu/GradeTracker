@@ -1,0 +1,7 @@
+/Users/zayedumer/Documents/Personal-Projects/GradeTracker/GradeTracker/obj/Release/net7.0/PubTmp/Out/GradeTracker
+/Users/zayedumer/Documents/Personal-Projects/GradeTracker/GradeTracker/obj/Release/net7.0/PubTmp/Out/appsettings.Development.json
+/Users/zayedumer/Documents/Personal-Projects/GradeTracker/GradeTracker/obj/Release/net7.0/PubTmp/Out/appsettings.json
+/Users/zayedumer/Documents/Personal-Projects/GradeTracker/GradeTracker/obj/Release/net7.0/PubTmp/Out/GradeTracker.dll
+/Users/zayedumer/Documents/Personal-Projects/GradeTracker/GradeTracker/obj/Release/net7.0/PubTmp/Out/GradeTracker.deps.json
+/Users/zayedumer/Documents/Personal-Projects/GradeTracker/GradeTracker/obj/Release/net7.0/PubTmp/Out/GradeTracker.runtimeconfig.json
+/Users/zayedumer/Documents/Personal-Projects/GradeTracker/GradeTracker/obj/Release/net7.0/PubTmp/Out/GradeTracker.pdb
