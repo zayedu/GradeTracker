@@ -197,9 +197,10 @@ int finalMarkTo12 = 0;
             grades.push({ gradeName, gradeValue });
         }
 
-        // Send POST request via fetch
+        // Use fetch to send grades via POST without reloading the page
         const promises = grades.map(grade => {
-            return fetch('/Builder/SaveGrade', {
+            const url = '/Builder/SaveGradeToCookie'; // Updated to use the SaveGradeToCookie action
+            return fetch(url, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -227,4 +228,5 @@ int finalMarkTo12 = 0;
                 alert('Error saving grades: ' + error.message);
             });
     }
+
 </script>

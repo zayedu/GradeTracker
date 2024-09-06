@@ -13,14 +13,6 @@ builder.Services.AddSession(options =>
     options.Cookie.SameSite = SameSiteMode.Lax; // Allow session to work across subdomains or same-site contexts
 });
 
-// Optionally: Add Redis distributed session (uncomment if you want to use Redis)
-// builder.Services.AddDistributedRedisCache(options =>
-// {
-//     options.Configuration = "localhost:6379"; // Redis server connection string
-//     options.InstanceName = "GradeTrackerSession"; // Instance name for session
-// });
-
-// Make sure session is configured before UseAuthorization
 var app = builder.Build();
 
 app.UseHttpsRedirection();

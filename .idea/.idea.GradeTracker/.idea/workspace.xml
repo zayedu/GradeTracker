@@ -11,31 +11,23 @@
   <component name="ChangeListManager">
     <list default="true" id="87a2c868-6069-45c2-974a-ed9c3ec07fc4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GradeTracker/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GradeTracker/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/GradeTracker/xs/UserPrefs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/GradeTracker/xs/UserPrefs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GradeTracker.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker.sln.DotSettings.user" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GradeTracker/Controllers/BuilderController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker/Controllers/BuilderController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GradeTracker/GradeTracker.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker/GradeTracker.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GradeTracker/Models/Models.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker/Models/Models.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GradeTracker/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GradeTracker/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker/Properties/launchSettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GradeTracker/Views/Builder/Course.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker/Views/Builder/Course.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GradeTracker/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker/Views/Home/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GradeTracker/bin/Debug/net8.0/GradeTracker.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker/bin/Debug/net8.0/GradeTracker.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GradeTracker/bin/Debug/net8.0/GradeTracker.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker/bin/Debug/net8.0/GradeTracker.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GradeTracker/obj/Debug/net8.0/GradeTracker.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker/obj/Debug/net8.0/GradeTracker.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GradeTracker/obj/Debug/net8.0/GradeTracker.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker/obj/Debug/net8.0/GradeTracker.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GradeTracker/obj/Debug/net8.0/GradeTracker.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker/obj/Debug/net8.0/GradeTracker.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GradeTracker/obj/Debug/net8.0/GradeTracker.RazorAssemblyInfo.cache" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker/obj/Debug/net8.0/GradeTracker.RazorAssemblyInfo.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GradeTracker/obj/Debug/net8.0/GradeTracker.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker/obj/Debug/net8.0/GradeTracker.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GradeTracker/obj/Debug/net8.0/GradeTracker.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker/obj/Debug/net8.0/GradeTracker.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GradeTracker/obj/Debug/net8.0/GradeTracker.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker/obj/Debug/net8.0/GradeTracker.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GradeTracker/obj/Debug/net8.0/GradeTracker.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker/obj/Debug/net8.0/GradeTracker.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GradeTracker/obj/Debug/net8.0/ref/GradeTracker.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker/obj/Debug/net8.0/ref/GradeTracker.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GradeTracker/obj/Debug/net8.0/refint/GradeTracker.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker/obj/Debug/net8.0/refint/GradeTracker.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GradeTracker/obj/GradeTracker.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker/obj/GradeTracker.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GradeTracker/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GradeTracker/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GradeTracker/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GradeTracker/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GradeTracker/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GradeTracker/bin/Debug/net7.0/GradeTracker.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker/bin/Debug/net7.0/GradeTracker.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GradeTracker/bin/Debug/net7.0/GradeTracker.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker/bin/Debug/net7.0/GradeTracker.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GradeTracker/obj/Debug/net7.0/GradeTracker.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker/obj/Debug/net7.0/GradeTracker.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GradeTracker/obj/Debug/net7.0/GradeTracker.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker/obj/Debug/net7.0/GradeTracker.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GradeTracker/obj/Debug/net7.0/GradeTracker.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker/obj/Debug/net7.0/GradeTracker.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GradeTracker/obj/Debug/net7.0/GradeTracker.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker/obj/Debug/net7.0/GradeTracker.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GradeTracker/obj/Debug/net7.0/GradeTracker.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker/obj/Debug/net7.0/GradeTracker.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GradeTracker/obj/Debug/net7.0/GradeTracker.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker/obj/Debug/net7.0/GradeTracker.genruntimeconfig.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GradeTracker/obj/Debug/net7.0/GradeTracker.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker/obj/Debug/net7.0/GradeTracker.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GradeTracker/obj/Debug/net7.0/ref/GradeTracker.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker/obj/Debug/net7.0/ref/GradeTracker.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GradeTracker/obj/Debug/net7.0/refint/GradeTracker.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker/obj/Debug/net7.0/refint/GradeTracker.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GradeTracker/obj/Debug/net7.0/staticwebassets.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker/obj/Debug/net7.0/staticwebassets.build.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +53,7 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ad7e45aeeb369136dcdf7752a83126a436a32dd7ddf9bf588c8d1ce96f05b/CookieHeaderValue.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/bf9021a960b74107a7e141aa06bc9d8a0a53c929178c2fb95b1597be8af8dc/ExceptionDispatchInfo.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
@@ -72,19 +65,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.GradeTracker: http.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.GradeTracker: http.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.GradeTracker: http">
     <configuration name="GradeTracker: SFWRENg3tracker - Zip Deploy" type="DotNetMsBuildPublish" factoryName="Publish to IIS">
       <riderPublish configuration="Release" platform="Any CPU" publish_profile="SFWRENg3tracker - Zip Deploy.pubxml" pubxml_path="$PROJECT_DIR$/GradeTracker/Properties/PublishProfiles/SFWRENg3tracker - Zip Deploy.pubxml" user_name="$SFWRENg3tracker" uuid_high="-8315638336062405314" uuid_low="-8609744409345146423" />
@@ -135,6 +128,7 @@
       <workItem from="1725564195966" duration="3181000" />
       <workItem from="1725582460885" duration="14000" />
       <workItem from="1725640102951" duration="2674000" />
+      <workItem from="1725642918265" duration="1004000" />
     </task>
     <servers />
   </component>
@@ -145,24 +139,5 @@
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/GradeTracker/Controllers/BuilderController.cs</url>
-          <line>131</line>
-          <properties documentPath="$PROJECT_DIR$/GradeTracker/Controllers/BuilderController.cs" containingFunctionPresentation="Method 'GetGradeFromSession'">
-            <startOffsets>
-              <option value="6137" />
-            </startOffsets>
-            <endOffsets>
-              <option value="6196" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
