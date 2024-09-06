@@ -9,26 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87a2c868-6069-45c2-974a-ed9c3ec07fc4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GradeTracker/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GradeTracker/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/GradeTracker/xs/UserPrefs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/GradeTracker/xs/UserPrefs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GradeTracker.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GradeTracker/Controllers/BuilderController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker/Controllers/BuilderController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GradeTracker/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GradeTracker/Views/Builder/Course.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker/Views/Builder/Course.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GradeTracker/bin/Debug/net7.0/GradeTracker.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker/bin/Debug/net7.0/GradeTracker.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GradeTracker/bin/Debug/net7.0/GradeTracker.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker/bin/Debug/net7.0/GradeTracker.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GradeTracker/obj/Debug/net7.0/GradeTracker.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker/obj/Debug/net7.0/GradeTracker.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GradeTracker/obj/Debug/net7.0/GradeTracker.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker/obj/Debug/net7.0/GradeTracker.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GradeTracker/obj/Debug/net7.0/GradeTracker.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker/obj/Debug/net7.0/GradeTracker.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GradeTracker/obj/Debug/net7.0/GradeTracker.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker/obj/Debug/net7.0/GradeTracker.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GradeTracker/obj/Debug/net7.0/GradeTracker.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker/obj/Debug/net7.0/GradeTracker.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GradeTracker/obj/Debug/net7.0/GradeTracker.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker/obj/Debug/net7.0/GradeTracker.genruntimeconfig.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GradeTracker/obj/Debug/net7.0/GradeTracker.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker/obj/Debug/net7.0/GradeTracker.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GradeTracker/obj/Debug/net7.0/ref/GradeTracker.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker/obj/Debug/net7.0/ref/GradeTracker.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GradeTracker/obj/Debug/net7.0/refint/GradeTracker.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker/obj/Debug/net7.0/refint/GradeTracker.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GradeTracker/obj/Debug/net7.0/staticwebassets.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/GradeTracker/obj/Debug/net7.0/staticwebassets.build.json" afterDir="false" />
-    </list>
+    <list default="true" id="87a2c868-6069-45c2-974a-ed9c3ec07fc4" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -129,6 +110,7 @@
       <workItem from="1725582460885" duration="14000" />
       <workItem from="1725640102951" duration="2674000" />
       <workItem from="1725642918265" duration="1004000" />
+      <workItem from="1725648800863" duration="316000" />
     </task>
     <servers />
   </component>
