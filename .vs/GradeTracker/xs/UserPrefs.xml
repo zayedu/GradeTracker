@@ -1,20 +1,18 @@
 ﻿<Properties StartupConfiguration="{8C98EAFD-D261-453E-8884-0B137A13C1C9}|https">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.GradeTracker PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="GradeTracker/Views/Home/Index.cshtml">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../../../../usr/local/share/dotnet/sdk/7.0.315/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.TargetFrameworkInference.targets">
     <Files>
-      <File FileName="GradeTracker/Controllers/BuilderController.cs" />
-      <File FileName="../../../../../usr/local/share/dotnet/sdk/7.0.315/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.TargetFrameworkInference.targets" />
-      <File FileName="GradeTracker/Views/Home/Index.cshtml" Line="31" Column="98" />
+      <File FileName="../../../../../usr/local/share/dotnet/sdk/7.0.315/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.TargetFrameworkInference.targets" Line="1" Column="1" IsPinned="True" />
+      <File FileName="GradeTracker/Views/Home/Index.cshtml" IsPinned="True" />
+      <File FileName="GradeTracker/Controllers/BuilderController.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="GradeTracker" expanded="True">
-            <Node name="GradeTracker" expanded="True">
+            <Node name="GradeTracker">
               <Node name="Controllers" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Home" expanded="True" />
@@ -25,6 +23,8 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>
