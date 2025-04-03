@@ -8,6 +8,7 @@ public class Grade
 {
     public double Mark { get; set; }
     public double Weight { get; set; }
+    public DateTime DueDate { get; set; }
 }
 
 public class Midterm : Grade

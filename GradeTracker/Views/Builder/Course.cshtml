@@ -25,6 +25,7 @@ int finalMarkTo12 = 0;
             <th>Mark</th>
             <th>Weight Achieved</th>
             <th>Weighting</th>
+            <th>Due Date</th>
         </tr>
         </thead>
         <tbody>
@@ -35,7 +36,8 @@ int finalMarkTo12 = 0;
             <td><input type="number" class="form-control" id="assignmentMark_@assignment.Name" value="@assignment.Mark" oninput="updateAssignmentWeight('@assignment.Name', @assignment.Weight)" /></td>
             <td id="assignmentWeightAchieved_@assignment.Name">@((assignment.Mark / 100.0) * assignment.Weight)</td>
             <td>@assignment.Weight</td>
-        </tr>
+            <td>@(assignment.DueDate != DateTime.MinValue ? assignment.DueDate.ToString("yyyy-MM-dd HH:mm") : "TBD")</td>
+            </tr>
         }
         </tbody>
     </table>
@@ -51,6 +53,7 @@ int finalMarkTo12 = 0;
             <th>Mark</th>
             <th>Weight Achieved</th>
             <th>Weighting</th>
+            <th>Date</th>
         </tr>
         </thead>
         <tbody>
@@ -61,6 +64,7 @@ int finalMarkTo12 = 0;
             <td><input type="number" class="form-control" id="midtermMark_@midterm.Name" value="@midterm.Mark" oninput="updateMidtermWeight('@midterm.Name', @midterm.Weight)" /></td>
             <td id="midtermWeightAchieved_@midterm.Name">@((midterm.Mark / 100.0) * midterm.Weight)</td>
             <td>@midterm.Weight</td>
+            <td>@(midterm.DueDate != DateTime.MinValue ? midterm.DueDate.ToString("yyyy-MM-dd HH:mm") : "TBD")</td>
         </tr>
         }
         </tbody>
@@ -77,6 +81,7 @@ int finalMarkTo12 = 0;
             <th>Mark</th>
             <th>Weight Achieved</th>
             <th>Weighting</th>
+            <th>Date</th>
         </tr>
         </thead>
         <tbody>
@@ -89,6 +94,7 @@ int finalMarkTo12 = 0;
                 @(Model.Final.Mark / 100.0 * Model.Final.Weight)
             </td>
             <td>@Model.Final.Weight</td>
+            <td>TBD</td>
         </tr>
         </tbody>
     </table>
