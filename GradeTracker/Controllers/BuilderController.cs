@@ -224,7 +224,9 @@ namespace GradeTracker.Controllers
                     {
                         new Assignment() { Name = "Assignment 1", Mark = GetGradeFromCookie(course.Name, "Assignment 1"), Weight = 10 },
                         new Assignment() { Name = "Assignment 2", Mark = GetGradeFromCookie(course.Name, "Assignment 2"), Weight = 10 },
-                        new Assignment() { Name = "Assignment 3", Mark = GetGradeFromCookie(course.Name, "Assignment 3"), Weight = 10 }
+                        new Assignment() { Name = "Assignment 3", Mark = GetGradeFromCookie(course.Name, "Assignment 3"), Weight = 10 },
+                        new Assignment() { Name = "Bonus", Mark = GetGradeFromCookie(course.Name, "Bonus"), Weight = 5 }
+
                     };
                     course.Final = new Final() { Name = "Final Exam", Mark = GetGradeFromCookie(course.Name, "Final Exam"), Weight = 50 };
                     course.Midterms = new List<Midterm>
