@@ -9,103 +9,148 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 @{
-int finalMark = 0;
-int finalMarkTo12 = 0;
+    int finalMark = 0;
+    int finalMarkTo12 = 0;
 }
 <body>
 <div class="container mt-5">
     <h1 class="text-center mb-4">@Model.Name</h1>
+
+    @* --------------------  ASSIGNMENTS  -------------------- *@
     @if (Model.Assignments != null && Model.Assignments.Count != 0)
     {
-    <h2>Assignments</h2>
-    <table class="table table-striped">
-        <thead>
-        <tr>
-            <th>Assignment</th>
-            <th>Mark</th>
-            <th>Weight Achieved</th>
-            <th>Weighting</th>
-            <th>Due Date</th>
-        </tr>
-        </thead>
-        <tbody>
-        @foreach (var assignment in Model.Assignments)
-        {
-        <tr>
-            <td>@assignment.Name</td>
-            <td><input type="number" class="form-control" id="assignmentMark_@assignment.Name" value="@assignment.Mark" oninput="updateAssignmentWeight('@assignment.Name', @assignment.Weight)" /></td>
-            <td id="assignmentWeightAchieved_@assignment.Name">@((assignment.Mark / 100.0) * assignment.Weight)</td>
-            <td>@assignment.Weight</td>
-            <td>@(assignment.DueDate != DateTime.MinValue ? assignment.DueDate.ToString("yyyy-MM-dd HH:mm") : "TBD")</td>
+        <h2>Assignments</h2>
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>Assignment</th>
+                <th>Mark</th>
+                <th>Weight Achieved</th>
+                <th>Weighting</th>
+                <th>Due Date</th>
             </tr>
-        }
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+            @foreach (var assignment in Model.Assignments)
+            {
+                <tr>
+                    <td>@assignment.Name</td>
+                    <td>
+                        <input type="number" class="form-control"
+                               id="assignmentMark_@assignment.Name"
+                               value="@assignment.Mark"
+                               oninput="updateAssignmentWeight('@assignment.Name', @assignment.Weight)" />
+                    </td>
+                    <td id="assignmentWeightAchieved_@assignment.Name">
+                        @((assignment.Mark / 100.0) * assignment.Weight)
+                    </td>
+                    <td>@assignment.Weight</td>
+                    <td>
+                        @(assignment.DueDate != DateTime.MinValue
+                            ? assignment.DueDate.ToString("yyyy-MM-dd HH:mm")
+                            : "TBD")
+                    </td>
+                </tr>
+            }
+            </tbody>
+        </table>
     }
 
+    @* --------------------  MIDTERMS  -------------------- *@
     @if (Model.Midterms != null && Model.Midterms.Count != 0)
     {
-    <h2>Midterms</h2>
-    <table class="table table-striped">
-        <thead>
-        <tr>
-            <th>Midterm</th>
-            <th>Mark</th>
-            <th>Weight Achieved</th>
-            <th>Weighting</th>
-            <th>Date</th>
-        </tr>
-        </thead>
-        <tbody>
-        @foreach (var midterm in Model.Midterms)
-        {
-        <tr>
-            <td>@midterm.Name</td>
-            <td><input type="number" class="form-control" id="midtermMark_@midterm.Name" value="@midterm.Mark" oninput="updateMidtermWeight('@midterm.Name', @midterm.Weight)" /></td>
-            <td id="midtermWeightAchieved_@midterm.Name">@((midterm.Mark / 100.0) * midterm.Weight)</td>
-            <td>@midterm.Weight</td>
-            <td>@(midterm.DueDate != DateTime.MinValue ? midterm.DueDate.ToString("yyyy-MM-dd HH:mm") : "TBD")</td>
-        </tr>
-        }
-        </tbody>
-    </table>
+        <h2>Midterms</h2>
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>Midterm</th>
+                <th>Mark</th>
+                <th>Weight Achieved</th>
+                <th>Weighting</th>
+                <th>Date</th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var midterm in Model.Midterms)
+            {
+                <tr>
+                    <td>@midterm.Name</td>
+                    <td>
+                        <input type="number" class="form-control"
+                               id="midtermMark_@midterm.Name"
+                               value="@midterm.Mark"
+                               oninput="updateMidtermWeight('@midterm.Name', @midterm.Weight)" />
+                    </td>
+                    <td id="midtermWeightAchieved_@midterm.Name">
+                        @((midterm.Mark / 100.0) * midterm.Weight)
+                    </td>
+                    <td>@midterm.Weight</td>
+                    <td>
+                        @(midterm.DueDate != DateTime.MinValue
+                            ? midterm.DueDate.ToString("yyyy-MM-dd HH:mm")
+                            : "TBD")
+                    </td>
+                </tr>
+            }
+            </tbody>
+        </table>
     }
 
+    @* --------------------  FINAL EXAM  -------------------- *@
     @if (Model.Final != null)
     {
-    <h2>Exam</h2>
-    <table class="table table-striped">
-        <thead>
-        <tr>
-            <th>Exam</th>
-            <th>Mark</th>
-            <th>Weight Achieved</th>
-            <th>Weighting</th>
-            <th>Date</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>@Model.Final.Name</td>
-            <td>
-                <input type="number" class="form-control" id="finalMark" value="@Model.Final.Mark" oninput="updateFinalWeight()" />
-            </td>
-            <td id="finalWeightAchieved">
-                @(Model.Final.Mark / 100.0 * Model.Final.Weight)
-            </td>
-            <td>@Model.Final.Weight</td>
-            <td>TBD</td>
-        </tr>
-        </tbody>
-    </table>
+        <h2>Exam</h2>
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>Exam</th>
+                <th>Mark</th>
+                <th>Weight Achieved</th>
+                <th>Weighting</th>
+                <th>Date</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>@Model.Final.Name</td>
+                <td>
+                    <input type="number" class="form-control"
+                           id="finalMark"
+                           value="@Model.Final.Mark"
+                           oninput="updateFinalWeight()" />
+                </td>
+                <td id="finalWeightAchieved">
+                    @(Model.Final.Mark / 100.0 * Model.Final.Weight)
+                </td>
+                <td>@Model.Final.Weight</td>
+                <td>TBD</td>
+            </tr>
+            </tbody>
+        </table>
     }
 
+    @* --------------------  SUMMARY  -------------------- *@
     <h2>Final Marks</h2>
     <table class="table table-striped">
         <thead>
         <tr>
             <th>Final Mark</th>
-            <th>Final Exam Mark to 12</th>
+            <th>
+                Final Exam Mark to&nbsp;
+                <div class="btn-group">
+                    <button id="targetPointsBtn" type="button"
+                            class="btn btn-secondary dropdown-toggle"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        12
+                    </button>
+                    <div class="dropdown-menu">
+                        @for (var p = 12; p >= 1; p--)
+                        {
+                            <a class="dropdown-item" href="#" data-points="@p">@p</a>
+                        }
+                    </div>
+                </div>
+            </th>
         </tr>
         </thead>
         <tbody>
@@ -117,122 +162,140 @@ int finalMarkTo12 = 0;
     </table>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <button class="btn btn-primary" onclick="saveAllGrades()">Save</button>
-</body>
-</html>
 
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- ----------  GRADE‑MATH / UI LOGIC  ---------- -->
 <script>
+    /* -------- helper to sum weights & refresh -------- */
     function calculateTotalWeightAchieved() {
         let totalWeightAchieved = 0;
 
-        // Sum assignment weights
-        document.querySelectorAll('[id^="assignmentWeightAchieved_"]').forEach(element => {
-            totalWeightAchieved += parseFloat(element.innerText) || 0;
+        // assignments
+        document.querySelectorAll('[id^="assignmentWeightAchieved_"]').forEach(el => {
+            totalWeightAchieved += parseFloat(el.innerText) || 0;
         });
 
-        // Sum midterm weights
-        document.querySelectorAll('[id^="midtermWeightAchieved_"]').forEach(element => {
-            totalWeightAchieved += parseFloat(element.innerText) || 0;
+        // midterms
+        document.querySelectorAll('[id^="midtermWeightAchieved_"]').forEach(el => {
+            totalWeightAchieved += parseFloat(el.innerText) || 0;
         });
 
-        // Add final exam weight
+        // final
         totalWeightAchieved += parseFloat(document.getElementById('finalWeightAchieved').innerText) || 0;
 
-        // Update the final mark sum
+        // show overall
         document.getElementById('finalMarkSum').innerText = totalWeightAchieved.toFixed(2);
 
-        // Calculate and update the final exam mark needed to 12
-        calculateFinalExamMarkTo12(totalWeightAchieved);
+        // figure out what’s needed on exam
+        calculateFinalExamMarkNeeded(totalWeightAchieved);
     }
 
-    function calculateFinalExamMarkTo12(totalWeightAchieved) {
-        var finalExamWeight = @Model.Final.Weight;
-        var finalExamMarkTo12 = (90 - totalWeightAchieved) / finalExamWeight;
-        document.getElementById('finalExamMarkTo12').innerText = 100*(finalExamMarkTo12.toFixed(2));
+    /* -------- grade‑point → % map -------- */
+    const gradeThresholds = {
+        12: 90,
+        11: 85,
+        10: 80,
+        9:  77,
+        8:  73,
+        7:  70,
+        6:  67,
+        5:  63,
+        4:  60,
+        3:  57,
+        2:  53,
+        1:  50
+    };
+
+    let targetPoints = 12;   // default
+
+    function calculateFinalExamMarkNeeded(totalWeightAchieved) {
+        const finalExamWeight = @Model.Final.Weight;
+        const targetPercent   = gradeThresholds[targetPoints];
+
+        let needed = (targetPercent - totalWeightAchieved) / finalExamWeight * 100;
+        needed = Math.max(0, needed);   // don’t go negative
+        document.getElementById('finalExamMarkTo12').innerText = needed.toFixed(2);
     }
 
+    /* -------- per‑component update helpers -------- */
     function updateFinalWeight() {
-        var mark = parseFloat(document.getElementById('finalMark').value) || 0;
-        var weight = @Model.Final.Weight;
-        var weightAchieved = (mark / 100.0) * weight;
-        document.getElementById('finalWeightAchieved').innerText = weightAchieved.toFixed(2);
+        const mark   = parseFloat(document.getElementById('finalMark').value) || 0;
+        const weight = @Model.Final.Weight;
+        const achieved = (mark / 100.0) * weight;
+        document.getElementById('finalWeightAchieved').innerText = achieved.toFixed(2);
         calculateTotalWeightAchieved();
     }
 
-    function updateMidtermWeight(midtermName, weight) {
-        var mark = parseFloat(document.getElementById('midtermMark_' + midtermName).value) || 0;
-        var weightAchieved = (mark / 100.0) * weight;
-        document.getElementById('midtermWeightAchieved_' + midtermName).innerText = weightAchieved.toFixed(2);
+    function updateMidtermWeight(name, weight) {
+        const mark = parseFloat(document.getElementById('midtermMark_' + name).value) || 0;
+        const achieved = (mark / 100.0) * weight;
+        document.getElementById('midtermWeightAchieved_' + name).innerText = achieved.toFixed(2);
         calculateTotalWeightAchieved();
     }
 
-    function updateAssignmentWeight(assignmentName, weight) {
-        var mark = parseFloat(document.getElementById('assignmentMark_' + assignmentName).value) || 0;
-        var weightAchieved = (mark / 100.0) * weight;
-        document.getElementById('assignmentWeightAchieved_' + assignmentName).innerText = weightAchieved.toFixed(2);
+    function updateAssignmentWeight(name, weight) {
+        const mark = parseFloat(document.getElementById('assignmentMark_' + name).value) || 0;
+        const achieved = (mark / 100.0) * weight;
+        document.getElementById('assignmentWeightAchieved_' + name).innerText = achieved.toFixed(2);
         calculateTotalWeightAchieved();
     }
+
+    /* -------- dropdown wiring -------- */
+    document.addEventListener('DOMContentLoaded', () => {
+        // hook each dropdown item
+        document.querySelectorAll('.dropdown-menu .dropdown-item')
+            .forEach(item => item.addEventListener('click', e => {
+                e.preventDefault();
+                targetPoints = parseInt(item.dataset.points, 10);
+                document.getElementById('targetPointsBtn').innerText = targetPoints;
+                calculateTotalWeightAchieved();
+            }));
+
+        // first run so table isn’t empty
+        calculateTotalWeightAchieved();
+    });
 </script>
 
+<!-- ----------  SAVE‑TO‑COOKIE LOGIC (unchanged) ---------- -->
 <script>
     function saveAllGrades() {
         const courseName = '@Model.Name';
         const grades = [];
 
-        // Collect assignment grades
-        document.querySelectorAll('[id^="assignmentMark_"]').forEach(element => {
-            const gradeName = element.id.replace('assignmentMark_', '');
-            const gradeValue = parseFloat(element.value) || 0;
-            grades.push({ gradeName, gradeValue });
+        // assignments
+        document.querySelectorAll('[id^="assignmentMark_"]').forEach(el => {
+            grades.push({ gradeName: el.id.replace('assignmentMark_', ''), gradeValue: parseFloat(el.value) || 0 });
         });
 
-        // Collect midterm grades
-        document.querySelectorAll('[id^="midtermMark_"]').forEach(element => {
-            const gradeName = element.id.replace('midtermMark_', '');
-            const gradeValue = parseFloat(element.value) || 0;
-            grades.push({ gradeName, gradeValue });
+        // midterms
+        document.querySelectorAll('[id^="midtermMark_"]').forEach(el => {
+            grades.push({ gradeName: el.id.replace('midtermMark_', ''), gradeValue: parseFloat(el.value) || 0 });
         });
 
-        // Collect final exam grade
+        // final
         const finalMarkElement = document.getElementById('finalMark');
         if (finalMarkElement) {
-            const gradeName = 'Final Exam';
-            const gradeValue = parseFloat(finalMarkElement.value) || 0;
-            grades.push({ gradeName, gradeValue });
+            grades.push({ gradeName: 'Final Exam', gradeValue: parseFloat(finalMarkElement.value) || 0 });
         }
 
-        // Use fetch to send grades via POST without reloading the page
-        const promises = grades.map(grade => {
-            const url = '/Builder/SaveGradeToCookie'; // Updated to use the SaveGradeToCookie action
-            return fetch(url, {
+        const promises = grades.map(g =>
+            fetch('/Builder/SaveGradeToCookie', {
                 method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({
-                    courseName: courseName,
-                    gradeName: grade.gradeName,
-                    gradeValue: grade.gradeValue
-                })
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ courseName, gradeName: g.gradeName, gradeValue: g.gradeValue })
             })
-                .then(response => response.json())
-                .then(data => {
-                    if (!data.success) {
-                        throw new Error(`Failed to save grade: ${grade.gradeName}`);
-                    }
-                });
-        });
+            .then(r => r.json())
+            .then(d => { if (!d.success) throw new Error(`Failed to save grade: ${g.gradeName}`); })
+        );
 
         Promise.all(promises)
-            .then(() => {
-                const buildUrl = '@Url.Action("Build", "Builder")' + `?courseName=${courseName}`;
-                window.location.href = buildUrl;
-            })
-            .catch(error => {
-                alert('Error saving grades: ' + error.message);
-            });
+            .then(() => window.location.href = '@Url.Action("Build", "Builder")' + `?courseName=${courseName}`)
+            .catch(err => alert('Error saving grades: ' + err.message));
     }
-
 </script>
+</body>
+</html>

@@ -6,7 +6,6 @@
 /Users/zayedumer/Documents/Personal-Projects/GradeTracker/GradeTracker/bin/Debug/net7.0/GradeTracker.runtimeconfig.json
 /Users/zayedumer/Documents/Personal-Projects/GradeTracker/GradeTracker/bin/Debug/net7.0/GradeTracker.dll
 /Users/zayedumer/Documents/Personal-Projects/GradeTracker/GradeTracker/bin/Debug/net7.0/GradeTracker.pdb
-/Users/zayedumer/Documents/Personal-Projects/GradeTracker/GradeTracker/obj/Debug/net7.0/GradeTracker.csproj.AssemblyReference.cache
 /Users/zayedumer/Documents/Personal-Projects/GradeTracker/GradeTracker/obj/Debug/net7.0/GradeTracker.GeneratedMSBuildEditorConfig.editorconfig
 /Users/zayedumer/Documents/Personal-Projects/GradeTracker/GradeTracker/obj/Debug/net7.0/GradeTracker.AssemblyInfoInputs.cache
 /Users/zayedumer/Documents/Personal-Projects/GradeTracker/GradeTracker/obj/Debug/net7.0/GradeTracker.AssemblyInfo.cs
@@ -29,3 +28,4 @@
 /Users/zayedumer/Documents/Personal-Projects/GradeTracker/GradeTracker/obj/Debug/net7.0/GradeTracker.pdb
 /Users/zayedumer/Documents/Personal-Projects/GradeTracker/GradeTracker/obj/Debug/net7.0/GradeTracker.genruntimeconfig.cache
 /Users/zayedumer/Documents/Personal-Projects/GradeTracker/GradeTracker/obj/Debug/net7.0/ref/GradeTracker.dll
+/Users/zayedumer/Documents/Personal-Projects/GradeTracker/GradeTracker/obj/Debug/net7.0/GradeTracker.sourcelink.json
